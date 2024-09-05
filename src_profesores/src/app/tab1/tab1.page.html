@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="text-align: center;">
+    <ion-title>
+      Inicia sesión!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle>Bienvenido/a estudiante!</ion-card-subtitle>
+      <ion-card-title>Inicia sesión para poder acceder a registrar las asistencias de los alumnos desde tu celular!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Nombre" labelPlacement="floating" type="text" [(ngModel)]="nom"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="pass"></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <div style="margin-left: 25%;">
+        <ion-button (click)="login()">
+        <ion-icon slot="start" name="log-in-outline"></ion-icon>
+        Iniciar sesión
+      </ion-button>
+    </div>
+
+  </ion-card>
+
+</ion-content>
